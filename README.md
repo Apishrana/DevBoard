@@ -4,8 +4,6 @@ Custom ATmega328-P-based development board for embedded systems, Arduino-style p
 
 ## Images
 
-Add board renders or exported screenshots here when available.
-
 ### Front
 
 ![Front](image/front.png)
@@ -18,9 +16,7 @@ Add board renders or exported screenshots here when available.
 
 ![PCB](image/pcb.png)
 
-
 ### Schematic
-
 
 ![Schematic](image/schema.png)
 
@@ -43,30 +39,35 @@ Add board renders or exported screenshots here when available.
 ## Repository Structure
 
 ```text
-Devboard/
-|
-├── Devboard-backups/
-├── grbr/
+.
 ├── BOM.csv
 ├── Devboard.kicad_pcb
 ├── Devboard.kicad_prl
 ├── Devboard.kicad_pro
 ├── Devboard.kicad_sch
+├── grbr
+│   ├── Devboard-B_Cu.gbl
+│   ├── Devboard-B_Mask.gbs
+│   ├── Devboard-B_Paste.gbp
+│   ├── Devboard-B_Silkscreen.gbo
+│   ├── Devboard-Edge_Cuts.gm1
+│   ├── Devboard-F_Cu.gtl
+│   ├── Devboard-F_Mask.gts
+│   ├── Devboard-F_Paste.gtp
+│   ├── Devboard-F_Silkscreen.gto
+│   ├── Devboard-job.gbrjob
+│   ├── Devboard-NPTH.drl
+│   ├── Devboard-PTH.drl
+│   └── Devboard.zip
+├── image
+│   ├── back.png
+│   ├── front.png
+│   ├── pcb.png
+│   └── schema.png
 └── README.md
+
+3 directories, 23 files
 ```
-
----
-
-## Files
-
-- `Devboard.kicad_pro` -> KiCad project file
-- `Devboard.kicad_sch` -> Schematic design
-- `Devboard.kicad_pcb` -> PCB layout
-- `Devboard.kicad_prl` -> KiCad project local settings
-- `BOM.csv` -> Bill of materials
-- `grbr/` -> Gerber manufacturing files
-- `grbr/Devboard.zip` -> Exported Gerber archive
-- `Devboard-backups/` -> KiCad backup files
 
 ---
 
@@ -77,26 +78,11 @@ Devboard/
 - Main Clock: `16 MHz`
 - USB Serial Clock: `12 MHz`
 - Input Power: USB-C or `VIN`
-- Regulated Rail: `5 V`
-- Recommended `VIN`: `7-12 V`
 
----
-
-## Programming
-
-After installing an Arduino-compatible bootloader, the board can be programmed through USB serial.
-
-Typical Arduino IDE settings:
-
-- Board: Arduino Uno
-- Processor: ATmega328P
-- Clock: 16 MHz
-- Port: CH340 serial port
-
-If the ATmega328-P is blank, burn the bootloader first using an ISP programmer.
+`VIN`: `7-12 V`
 
 ---
 
 ## Author
 
-Created by [AYUSH-pro-grammer](https://github.com/AYUSH-pro-grammer)
+Created by [Apish Rana](https://github.com/Apishrana)
