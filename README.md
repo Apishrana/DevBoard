@@ -1,6 +1,6 @@
 # ATmega328-P USB-C Devboard
 
-Custom ATmega328-P-based development board for embedded systems, Arduino-style prototyping, and hardware debugging.
+Custom ATmega328-P-based devboard for Arduino-like systems.
 
 ## Images
 
@@ -24,15 +24,13 @@ Custom ATmega328-P-based development board for embedded systems, Arduino-style p
 
 ## Features
 
-- ATmega328-P Microcontroller
+- ATmega328-P as Microcontroller
 - USB-C Support
-- CH340G USB-to-UART Serial Interface
-- Arduino-Style GPIO Breakout
-- Digital Pins `0-13`
-- Analog Pins `A0-A5`
-- 5 V Regulation with L7805
-- Reset Button with Auto-Reset Support
-- Custom PCB Design in KiCad
+- CH340G for USB-to-Serial
+- Digital Pin `0-13`
+- Analog Pin `A0-A5`
+- 5 V VIN Regulation with L7805
+- Reset Button
 
 ---
 
