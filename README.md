@@ -1,6 +1,6 @@
-# ATmega328-P USB-C Devboard
+# ATmega328 USB-C Devboard
 
-Custom ATmega328-P-based devboard for Arduino-like systems.
+Custom ATmega328-P based devboard for Arduino-like systems.
 
 ## Images
 
