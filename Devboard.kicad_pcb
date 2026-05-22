@@ -54,7 +54,7 @@
 			(layerselection 0x00000000_00000000_55555555_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
-			(usegerberextensions no)
+			(usegerberextensions yes)
 			(usegerberattributes yes)
 			(usegerberadvancedattributes yes)
 			(creategerberjobfile yes)
@@ -82,9 +82,9 @@
 			(subtractmaskfromsilk no)
 			(outputformat 1)
 			(mirror no)
-			(drillshape 1)
+			(drillshape 0)
 			(scaleselection 1)
-			(outputdirectory "")
+			(outputdirectory "./")
 		)
 	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal"
@@ -3375,7 +3375,7 @@
 			(at 0 -5.645 0)
 			(layer "F.SilkS")
 			(hide yes)
-			(uuid "ce2bf7cd-1688-4ca4-bd68-7acfc717a930")
+			(uuid "ea3d4e4b-d857-496d-982d-cb51a0361f93")
 			(effects
 				(font
 					(size 1 1)
@@ -3387,7 +3387,7 @@
 			(at 0 5.1 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "c0f23a82-5953-42e9-86ca-743a0d596596")
+			(uuid "a263bcf4-35a2-40e8-90c3-1c384432c656")
 			(effects
 				(font
 					(size 1 1)
@@ -3400,7 +3400,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "5dd1cdbb-14bc-42ec-b088-15949318fee0")
+			(uuid "8cef8c1b-129b-40aa-a128-bc0777b7b171")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3413,7 +3413,7 @@
 			(unlocked yes)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "663748e3-f097-4853-9509-a4809bd962fb")
+			(uuid "8551f78b-d28d-4102-a17d-da52eaee1ea6")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10159,17 +10159,45 @@
 		)
 		(embedded_fonts no)
 	)
-	(gr_poly
-		(pts
-			(xy 175 54.5) (xy 211 54.5) (xy 211 54.50001) (xy 211 125) (xy 175 125) (xy 175 107.375)
-		)
+	(gr_line
+		(start 175 54.5)
+		(end 211 54.50001)
 		(stroke
 			(width 0.05)
-			(type solid)
+			(type default)
 		)
-		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "5718b890-514a-4d96-8ef4-0bfc05a28b0c")
+		(uuid "ff56ecf8-0abe-4e2b-9223-20b2f8b439d3")
+	)
+	(gr_line
+		(start 175 125)
+		(end 175 54.5)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "19a84cff-5178-4f9c-be9b-a50ec0bc1c54")
+	)
+	(gr_line
+		(start 175 125)
+		(end 211 125)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1e9b6eab-3806-43fb-94fb-5d9a59b6fd65")
+	)
+	(gr_line
+		(start 211 54.50001)
+		(end 211 125)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "Edge.Cuts")
+		(uuid "1a746cde-dea8-444b-a126-7438b43bae1a")
 	)
 	(gr_text "* supports 7-35V\n  use 7-12V\n"
 		(at 177 90 90)
